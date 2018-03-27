@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{indentfirst}
+\geometry{left=3.0cm,right=3.0cm,top=3.0cm,bottom=4.0cm}
+\usepackage{ctex}
+\renewcommand{\thesection}{Ex.}
+\DeclareMathOperator*{\suplim}{\overline{\lim}}
+\DeclareMathOperator*{\inflim}{\underline{\lim}}
+
+\title{MA320\ 抽象代数\ 作业二}
+\author{刘逸灏 515370910207}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{2.1/6}
+若$x^2\neq e$，则$(x^{-1})^2\neq e$，且$a\neq a^{-1}$。设$S=\varnothing$，只需每次从有限群$G$中取出一个元$x$，若$x^2\neq e,x\not\in S$，则将$x$和$x^{-1}$都加入$S$中，所以$S$中必定有偶数个元素。当$G$中所有元都被取出时，其中满足$x^2\neq e$的元必定都在$S$中，故有偶数个这样的元。
+
+\section{2.1/7}
+由上题得，$x^2\neq e$的元有偶数个，故在偶数阶群中总共有偶数个元，故满足$x^2=e$的元也有偶数个。
+
+\section{2.1/8}
+$\forall a,b\in G$，$a^2=e,b^2=e$，则
+$$(ab)^2=abab=e=a^2b^2$$
+$$ba=ab$$
+
+故$G$为Abel群。
+
+\section{2.2/4}
+$\forall g,h\in C_G(A)$，$\forall a\in A$，则
+$$(gh)a=g(ha)=g(ah)=(ga)h=(ag)h=a(gh)$$
+
+故乘法封闭，$C_G(A)$为$G$的一个子群，但$A$中元素不一定都满足交换律，故$C_G(A)$不一定包含$A$。
+
+\section{2.2/5}
+
+
+\section{2.2/7}
+
+\end{document}
+ 
