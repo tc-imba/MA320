@@ -1,0 +1,64 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{indentfirst}
+\geometry{left=3.0cm,right=3.0cm,top=3.0cm,bottom=4.0cm}
+\usepackage{ctex}
+\renewcommand{\thesection}{Ex.}
+\DeclareMathOperator*{\suplim}{\overline{\lim}}
+\DeclareMathOperator*{\inflim}{\underline{\lim}}
+
+\title{MA320\ 抽象代数\ 作业三}
+\author{刘逸灏 515370910207}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{2.3/1}
+$$1\to3\to5\to2$$
+$$2\to1\to1\to1$$
+$$3\to2\to3\to3$$
+$$4\to4\to4\to5$$
+$$5\to5\to2\to4$$
+$$(4\ 5\ 2)(5\ 2\ 3)(3\ 2\ 1)=(1\ 2)(4\ 5)$$
+
+\section{2.3/2}
+$$(i_1\ i_2\cdots i_t)=(i_1\ i_t)\cdots(i_1\ i_4)(i_1\ i_3)(i_1\ i_2)$$
+
+即$t$-轮换可表示为$t$个对换的积。由于偶数个对换的乘积是偶置换，奇数个对换的乘积是奇置换，故得证。
+
+\section{2.3/3}
+设$\sigma=(i_1\ i_2\cdots i_t)=(i_1\ i_t)\cdots(i_1\ i_4)(i_1\ i_3)(i_1\ i_2)$，$\sigma^n$即为对于每一个元素进行轮换，
+$$i_1\to i_2\to i_3\to\cdots\to i_1$$
+$$i_2\to i_3\to i_4\to\cdots\to i_2$$
+$$\cdots$$
+$$i_t\to i_1\to i_4\to\cdots\to i_t$$
+
+易知对于每个元素，进行$t$次轮换可得到自身，即$\sigma^t=e$，故$t$-轮换的阶是$t$。
+
+\section{2.3/5}
+考虑置换
+$$\sigma=(1\ 2)(2\ 3)\cdots(i\ i+1)\cdots(n-1\ n)$$
+$$1\to1\to1\to\cdots\to1\to1\to2$$
+$$2\to2\to2\to\cdots\to2\to3\to3$$
+$$\cdots$$
+$$n-1\to n\to n\cdots\to n\to n\to n$$
+$$n\to n-1\to n-2\cdots\to 3\to 2\to 1$$
+
+即$\sigma=(1\ 2\ 3\cdots n)$，故题设为$S_n$的一个生成元集
+
+\section{2.3/6}
+当$n$为偶数，$$\sigma=(1\ n)(2\ n-1)\cdots(\frac{n-2}{2}\ \frac{n+2}{2})$$
+
+当$n$为奇数，$$\sigma=(1\ n)(2\ n-1)\cdots(\frac{n-1}{2}\ \frac{n+1}{2})$$
+
+故当$n=4k$或$n=4k+3$时，$\sigma$为奇数个对换的乘积，为奇置换。当$n=4k+1$或$n=4k+2$时，$\sigma$为偶数个对换的乘积，为偶置换。($k\in N$)
+
+\end{document}
+ 
