@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{indentfirst}
+\geometry{left=3.0cm,right=3.0cm,top=3.0cm,bottom=4.0cm}
+\usepackage{ctex}
+\renewcommand{\thesection}{Ex.}
+\DeclareMathOperator*{\suplim}{\overline{\lim}}
+\DeclareMathOperator*{\inflim}{\underline{\lim}}
+
+\title{MA320\ 抽象代数\ 作业五}
+\author{刘逸灏 515370910207}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{2.5/1}
+设$f$的阶为$m$，$f(g)$的阶为$n$，即 
+$$g^m=e_G$$
+$$f(g)^n=e_H$$
+$$f(g^m)=f(g)^m=f(e_G)=e_H$$
+
+若$n\nmid m$，则$f(g)^m=f(g)^{m\mod n}\neq e_H$，矛盾，故$f(g)$的阶整除$g$的阶。
+
+\section{2.5/2}
+$$f(KM)=f(K)f(M)=e_Hf(M)=f(M)$$
+$$f^{-1}(f(M))=KM$$
+
+\section{2.5/3}
+根据定理5.8，已知$N$是$G$的正规子群，$M$是$G$的子群，故$N\cap M$为$M$的正规子群，且$N\leqslant M\to N\cap M=N$，即$N\lhd M$。
+
+\section{2.5/4}
+考虑行列式映射$GL_n(R)\to R^*:\phi(x)\to\det(x)$，由行列式运算性质可知这是一个群满同态，且$\ker\phi=SL_n(R)$。根据定理5.6(i)可知，$GL_n(R)/SL_n(R)\cong R^*$。
+
+\section{2.5/5}
+设$H=C(G)$，$G/H$为一个循环群，其生成元为$aH$，令$x,y \in G$，则$\exists m,n$使得$xH=(aH)^m=a^mH,yH=(aH)^n=a^nH$，$\exists h_1,h_2\in H$使得$x=a^mh_1,y=a^nh_2$，易知
+$$xy=(a^mh_1)(a^nh_2)=a^{m+n}h_1h_2=(a^nh_2)(a^mh_1)=yx$$
+
+故$G$是Abel群。
+
+\end{document}
+ 
