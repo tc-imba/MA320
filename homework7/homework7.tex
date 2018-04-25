@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{geometry}
+\usepackage{caption}
+\usepackage{indentfirst}
+\geometry{left=3.0cm,right=3.0cm,top=3.0cm,bottom=4.0cm}
+\usepackage{ctex}
+\renewcommand{\thesection}{Ex.}
+\DeclareMathOperator*{\suplim}{\overline{\lim}}
+\DeclareMathOperator*{\inflim}{\underline{\lim}}
+
+\title{MA320\ 抽象代数\ 作业七}
+\author{刘逸灏 515370910207}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{2.8/1}
+充分性：若群$G$是合数阶群，且阶数$n$可分解为至少两个素因数的幂$p_1^{r_1}$和$p_2^{r_2}$，则根据Sylow定理可知$G$中存在两个阶不同且都大于1的子群，与条件矛盾，故$G$一定是素数阶群。又由于$G$是单群，必须由一个生成元生成，故是循环群。
+
+必要性：根据Lagrange定理可知，对于素数阶循环Abel群，其子群的阶只能为$p$或$1$，易知$G$为单群。
+
+\section{2.8/2}
+设$g\not\in H$，则$gH$是$H$在$G$中的一个左陪集，且$H$也是$G$的一个左陪集。又由于$g\not\in H$可知$H\cap gH=\varnothing$，且$G$中只有两个$H$的左陪集，故$G=H\cup gH$。同理可得$G=H\cup Hg$，则易知$gH=Hg$，即$H$是$G$的正规子群。
+
+\section{2.8/3}
+$$a(ba^{-1}b^{-1})\in M$$
+$$(aba^{-1})b^{-1}\in N$$
+$$a(ba^{-1}b^{-1})=(aba^{-1})b^{-1}\in M\cap N=\{e\}$$
+$$aba^{-1}b^{-1}=e$$
+$$ab=ba$$
+
+\section{2.8/4}
+根据Sylow定理可知有Sylow-p子群$H$的阶为$p^s$，其中$p^s\mid n$且$p^{s+1}\nmid n$，对于$\forall h\in H,h\neq e_H$，根据Lagrange定理可知$h$的阶为$p^t,1\leqslant t\leqslant s$，故$h^{p^{t-1}}$的阶为$p$，得证。
+
+\section{2.8/5}
+作映射$\phi:x^{-1}Hx\to xN_G(H)$，则
+$$u^{-1}Hu=v^{-1}Hv\to uN_G(H)=vN_G(H)u^{-1}Hu=v^{-1}Hv\to uN_G(H)=vN_G(H)$$
+
+故$\phi$是一个一一映射，得证。
+
+\section{2.8/9}
+根据Lagrange定理可知$C(G)$的阶只能为$p,p^2$。当阶为$p^2$时，显然有$C(G)=G$，故$G$为Abel群。当阶为$p$时，$G/C(G)$的阶为$p$是循环群，故$G$为Abel群。
+
+\section{2.8/10}
+根据Lagrange定理可知$C(G)$的阶只能为$p,p^2,p^3$。显然当阶为$p^3$时$G$为Abel群，与条件矛盾。当阶为$p^2$时，$G/C(G)$的阶为$p$是循环群，故$G$为Abel群，与条件矛盾。故$C(G)$的阶只能为$p$，故其同构于$Z_p$。
+
+\end{document}
+ 
