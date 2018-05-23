@@ -21,18 +21,28 @@
 \maketitle
 
 \section{3.3/1}
-
+设$f(x),g(x)\in Z[x]$，则$f(x)g(x)\in\langle x\rangle$，$\exists h(x)\in Z[x]$使得$f(x)g(x)=x\cdot h(x)$。由于$x$不可约，上式可得$x\mid f(x)$或$x\mid g(x)$，故$\langle x\rangle$是$Z[x]$的素理想。
 
 \section{3.3/2}
+必要性：设$P$是素理想，则对$R$的任何两个理想$I,J$使得$IJ\subset P$必定可以推出$I\subset P$或$J\subset P$，则对$ab\in P$，有$\langle ab\rangle\subset P$，而$\langle a\rangle\langle b\rangle\subset\langle ab\rangle$，故$\langle a\rangle\subset P$或$\langle b\rangle\subset P$，即$a\in P$或$b\in P$。
 
+充分性：设对$ab\in P$，有$a\in P$或$b\in P$。则对$R$的任何两个理想$I,J$使得$IJ\subset P$，假设$I\not\subset P$且$J\not\subset P$，有$a\in I,a\not\in P,b\in J,b\not\in P$。又因为$ab\in IJ\subset P$，$ab\in P$，根据条件中的$a\in P$或$b\in P$得到矛盾，故假设错误，证得$I\subset P$或$J\subset P$。
 
 \section{3.3/3}
-
+假设素理想为$P$，根据命题3.1(ii)，由于$R$是有单位元的交换环，可得商环$R/P$为整环。由于$R$是有限的，$R/P$是一个有限整环，即是一个域。根据命题3.1(i)可得$P$是极大理想，故得证。
 
 \section{3.3/5}
-
+\begin{enumerate}[(i)]
+\item
+由于$P$是$R$的是素理想，对于$a,b\in R$，当$ab\in P$，有$a\in P$或$b\in P$。则对于$f(a),f(b)\in S$，当$f(a)f(b)\in S$，若$f(a)\not\in S$且$f(b)\not\in S$，则$P\not\supset K$，与条件矛盾，故$f(P)$也是$S$的素理想。
+\item
+由于$Q$是$S$的素理想，对于$a,b\in S$，当$ab\in S$，有$a\in S$或$b\in S$。则对于$f^{-1}(a),f^{-1}(b)\in R$，当$f^{-1}(a)f^{-1}(b)\in P$，显然有$f^{-1}(a)\in R$或$f^{-1}(b)\in R$，故$f^{-1}(Q)$也是$R$的素理想。
+\item
+根据(i)(ii)可得$S$中素理想与$R$中包含$K$的素理想有单射和满射关系，故是一一对应的。
+\end{enumerate}
 
 \section{3.3/7}
+$Z/mZ$的全部素理想和极大理想为$nZ/mZ$，其中$n$为$m$的全部素因数。首先，易得$nZ/mZ$为$Z/mZ$的理想，故$(Z/mZ)/(nZ/mZ)\cong Z/nZ$，$nZ/mZ$为极大理想当且仅当$n/nZ$是域，又当且仅当$n$为素数。故$nZ/mZ$为极大理想当且仅当$n$为$m$的素因数。同理可知，$nZ/mZ$为素理想当且仅当$n/nZ$是整环，又当且仅当$n$为素数。故$nZ/mZ$为素理想当且仅当$n$为$m$的素因数。
 
 \end{document}
  
